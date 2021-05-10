@@ -1,0 +1,49 @@
+li.plate-card:hover .icon-fill-hover {
+    background-color: red !important;
+    color: white;
+}
+
+li.plate-card:hover .text-strong-hover {
+    color: black;
+}
+
+.show-on-hover {
+    display: none;
+}
+
+.hover-parent:hover .show-on-hover {
+    display: block;
+}
+
+.hover-parent:hover .hover-children-dissapear {
+    display: none;
+}
+
+.text-strong-hover {
+    --tw-text-opacity: 1;
+    color: rgba(209, 213, 219, var(--tw-text-opacity));
+}
+
+.sticky-bottom-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.avatar-profile {
+    width: 5rem;
+    height: 5rem;
+}
+
+.rate-restaurant {
+    font-size: 10px;
+}
+
+@media (max-width: 500px) {
+    .avatar-profile {
+        width: 4rem;
+        height: 4rem;
+    }
+}

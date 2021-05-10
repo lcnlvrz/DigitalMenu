@@ -1,0 +1,27 @@
+.hover-parent:hover .children-of-hover-parent {
+    background: #ef4444;
+    color: white;
+}
+
+.hover-parent:hover .change-bg-on-hover-parent {
+    background: #f3f4f6;
+}
+
+.hover-parent:hover .bg-change-on-hover-parent {
+    background: white;
+    color: black;
+}
+
+.flex-margin-children > * {
+    margin: 10px;
+}
+
+.variable-height {
+    height: 80vh;
+}
+
+@media (max-width: 784px) {
+    .variable-height {
+        height: 100%;
+    }
+}

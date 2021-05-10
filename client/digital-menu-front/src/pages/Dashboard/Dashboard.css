@@ -1,0 +1,16 @@
+.flex-parent > * {
+    margin: 10px;
+}
+
+.flex-parent-2 > * {
+    margin: 20px;
+}
+
+.reload-icon {
+    color: #9ca3af;
+    font-size: 20px;
+}
+
+.reload-icon:hover {
+    color: red;
+}

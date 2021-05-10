@@ -1,0 +1,47 @@
+version: '3.1'
+
+services:
+  api:
+    image: digital-menu
+    container_name: digital-menu-server
+    build:
+      context: .
+    ports:
+      - '3000:3000'
+    depends_on:
+      - postgres
+    volumes:
+      - ./src:/usr/src/app/src
+    networks:
+      - default
+    env_file:
+      - .env
+
+  postgres:
+    image: postgres:10.4-alpine
+    container_name: digital-menu-postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - default
+    env_file:
+      - .env
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: digital-menu-pg-admin
+    ports:
+      - '8888:80'
+    volumes:
+      - admin_data:/var/lib/pgadmin
+    env_file:
+      - .env
+
+volumes:
+  db_data:
+  admin_data:
+
+networks:
+  default:
+    name: digital-menu-net
+    driver: bridge

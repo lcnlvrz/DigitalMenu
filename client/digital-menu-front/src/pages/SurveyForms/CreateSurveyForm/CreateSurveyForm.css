@@ -1,0 +1,11 @@
+input.input-placeholder-text-lg::placeholder {
+    font-weight: 600;
+}
+
+input.custom-input-form {
+    border-bottom: 1px solid #d1d5db;
+}
+
+.flex-parent-margin-children > * {
+    margin: 10px;
+}

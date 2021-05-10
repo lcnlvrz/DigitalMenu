@@ -1,0 +1,21 @@
+.avatar-profile2 {
+    width: 7rem;
+    height: 7rem;
+}
+
+@media (max-width: 700px) {
+    .avatar-profile2 {
+        width: 6rem;
+        height: 4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .name-restaurant {
+        font-size: 1rem !important;
+    }
+
+    .rate-restaurant {
+        font-size: 0.7rem;
+    }
+}

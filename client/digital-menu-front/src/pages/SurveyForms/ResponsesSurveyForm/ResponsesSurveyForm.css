@@ -1,0 +1,28 @@
+.item-same-width {
+    width: 33.33%;
+}
+
+.back-arrow {
+    color: #6b7280;
+}
+
+.back-arrow:hover {
+    color: black;
+}
+
+@media (max-width: 700px) {
+    .parent-wrap-on-mobile {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .parent-wrap-on-mobile > * {
+        margin: 0;
+    }
+
+    .parent-wrap-on-mobile:last-child {
+        margin-bottom: 2rem;
+    }
+    .item-same-width {
+        width: 100%;
+    }
+}
